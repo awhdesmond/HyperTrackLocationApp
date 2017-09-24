@@ -89,7 +89,7 @@ extension LoginViewController {
     }
 }
 
-extension LoginViewController {
+extension UIViewController {
     func showAlert(_ title: String = "Alert", message: String) {
         // create the alert
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)

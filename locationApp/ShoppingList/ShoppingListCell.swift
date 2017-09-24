@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol ShoppingListDelegate {
+    func updateShoppingLists(list: [String])
+}
+
 class ShoppingListCell: UICollectionViewCell {
     @IBOutlet var tableView: UITableView!
+    
+    var shoppingListDelegate: ShoppingListDelegate!
     var list = ["", ""]
     var canDelete = true
     
