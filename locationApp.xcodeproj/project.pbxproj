@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B243B211F77518200BBF4E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B243B201F77518200BBF4E5 /* User.swift */; };
+		3B243B251F77538200BBF4E5 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B243B241F77538200BBF4E5 /* OrderRequest.swift */; };
+		3B243B271F77546C00BBF4E5 /* OrderUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B243B261F77546C00BBF4E5 /* OrderUpdate.swift */; };
+		3B243B291F77559F00BBF4E5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B243B281F77559F00BBF4E5 /* Location.swift */; };
+		3B243B2C1F77562800BBF4E5 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B243B2B1F77562800BBF4E5 /* AuthController.swift */; };
+		3B3AEEA61F776070000D8458 /* OrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3AEEA51F776070000D8458 /* OrdersController.swift */; };
 		3B62534C1F76FD4200912845 /* WhiteHouse.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3B62534B1F76FD4200912845 /* WhiteHouse.gpx */; };
 		3B62534E1F77191C00912845 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B62534D1F77191C00912845 /* GoogleService-Info.plist */; };
 		3B6253521F7719E300912845 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6253511F7719E300912845 /* SignupViewController.swift */; };
@@ -19,11 +25,19 @@
 		7E25FB891F774081009A1CA0 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25FB881F774081009A1CA0 /* ShoppingListViewController.swift */; };
 		7E25FB8B1F774AFF009A1CA0 /* ShoppingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25FB8A1F774AFF009A1CA0 /* ShoppingListCell.swift */; };
 		7E25FB8D1F775877009A1CA0 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25FB8C1F775877009A1CA0 /* ListItemCell.swift */; };
+		7E37D0E91F7789230009A6D3 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D0E81F7789230009A6D3 /* Grocery.swift */; };
+		7E37D0EB1F77892E0009A6D3 /* GroceryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D0EA1F77892E0009A6D3 /* GroceryController.swift */; };
 		B57273CC20A65F97A90B766E /* Pods_locationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A75A3E747089DDD7493E708 /* Pods_locationApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A75A3E747089DDD7493E708 /* Pods_locationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_locationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B243B201F77518200BBF4E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B243B241F77538200BBF4E5 /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		3B243B261F77546C00BBF4E5 /* OrderUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderUpdate.swift; sourceTree = "<group>"; };
+		3B243B281F77559F00BBF4E5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3B243B2B1F77562800BBF4E5 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		3B3AEEA51F776070000D8458 /* OrdersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersController.swift; sourceTree = "<group>"; };
 		3B62534B1F76FD4200912845 /* WhiteHouse.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhiteHouse.gpx; sourceTree = "<group>"; };
 		3B62534D1F77191C00912845 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B6253511F7719E300912845 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +53,8 @@
 		7E25FB881F774081009A1CA0 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		7E25FB8A1F774AFF009A1CA0 /* ShoppingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCell.swift; sourceTree = "<group>"; };
 		7E25FB8C1F775877009A1CA0 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		7E37D0E81F7789230009A6D3 /* Grocery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grocery.swift; path = locationApp/Model/Grocery.swift; sourceTree = SOURCE_ROOT; };
+		7E37D0EA1F77892E0009A6D3 /* GroceryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryController.swift; path = locationApp/Controllers/GroceryController.swift; sourceTree = SOURCE_ROOT; };
 		CF30C13C7EBA62DA9F018697 /* Pods-locationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-locationApp/Pods-locationApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +70,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B243B1F1F77516E00BBF4E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B243B201F77518200BBF4E5 /* User.swift */,
+				3B243B241F77538200BBF4E5 /* OrderRequest.swift */,
+				3B243B261F77546C00BBF4E5 /* OrderUpdate.swift */,
+				3B243B281F77559F00BBF4E5 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B243B2A1F77561700BBF4E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B243B2B1F77562800BBF4E5 /* AuthController.swift */,
+				3B3AEEA51F776070000D8458 /* OrdersController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		3B62534F1F7719AF00912845 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				7E25FB871F774054009A1CA0 /* ShoppingList */,
+				3B243B2A1F77561700BBF4E5 /* Controllers */,
+				3B243B1F1F77516E00BBF4E5 /* Model */,
 				3BD520161F77246300CDCF4C /* Map */,
 				3B6253501F7719B900912845 /* Signup */,
 				3B62534F1F7719AF00912845 /* Login */,
@@ -125,6 +163,8 @@
 		7E25FB871F774054009A1CA0 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				7E37D0EA1F77892E0009A6D3 /* GroceryController.swift */,
+				7E37D0E81F7789230009A6D3 /* Grocery.swift */,
 				7E25FB881F774081009A1CA0 /* ShoppingListViewController.swift */,
 				7E25FB8A1F774AFF009A1CA0 /* ShoppingListCell.swift */,
 				7E25FB8C1F775877009A1CA0 /* ListItemCell.swift */,
@@ -298,12 +338,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E25FB891F774081009A1CA0 /* ShoppingListViewController.swift in Sources */,
+				7E37D0E91F7789230009A6D3 /* Grocery.swift in Sources */,
+				7E37D0EB1F77892E0009A6D3 /* GroceryController.swift in Sources */,
 				7E25FB8D1F775877009A1CA0 /* ListItemCell.swift in Sources */,
-				3B6253521F7719E300912845 /* SignupViewController.swift in Sources */,
 				3BCB72F51F76E94F0073A991 /* LoginViewController.swift in Sources */,
 				7E25FB8B1F774AFF009A1CA0 /* ShoppingListCell.swift in Sources */,
+				3B243B2C1F77562800BBF4E5 /* AuthController.swift in Sources */,
+				3B243B291F77559F00BBF4E5 /* Location.swift in Sources */,
+				3B3AEEA61F776070000D8458 /* OrdersController.swift in Sources */,
+				3B6253521F7719E300912845 /* SignupViewController.swift in Sources */,
+				3B243B251F77538200BBF4E5 /* OrderRequest.swift in Sources */,
+				3B243B271F77546C00BBF4E5 /* OrderUpdate.swift in Sources */,
 				3BCB72F31F76E94F0073A991 /* AppDelegate.swift in Sources */,
 				3BD520181F77247400CDCF4C /* MapViewController.swift in Sources */,
+				3B243B211F77518200BBF4E5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

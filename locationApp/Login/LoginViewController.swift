@@ -30,25 +30,11 @@ class LoginViewController: UIViewController {
             return
         }
 
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            if let error = error {
-                self.showAlert(message: error.localizedDescription)
-                return
-            }
-
-            let sanitizedEmail = email.replacingOccurrences(of: ".", with: "")
-            self.firebaseDB.child("users").child(sanitizedEmail).observeSingleEvent(of: .value, with: { (snapshot) in
-                let value = snapshot.value as? NSDictionary
-                let phoneNumber = value?["phone"] as? String ?? ""
-
-                self.loginToHyperTrack(userName: email, phoneNumber: phoneNumber, lookupID: phoneNumber)
-
-                self.performSegue(withIdentifier: "segueToTabViewController", sender: self)
-            }) { (error) in
-                print(error.localizedDescription)
-            }
-
-
+        AuthController.loginUser(email: email, password: password, successHandler: { (email, phoneNumber) in
+            self.loginToHyperTrack(userName: email, phoneNumber: phoneNumber, lookupID: phoneNumber)
+            self.performSegue(withIdentifier: "segueToTabViewController", sender: self)
+        }) { (error) in
+            print(error.localizedDescription)
         }
     }
 
