@@ -10,13 +10,15 @@
 		3B62534C1F76FD4200912845 /* WhiteHouse.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3B62534B1F76FD4200912845 /* WhiteHouse.gpx */; };
 		3B62534E1F77191C00912845 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B62534D1F77191C00912845 /* GoogleService-Info.plist */; };
 		3B6253521F7719E300912845 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6253511F7719E300912845 /* SignupViewController.swift */; };
-		3B8127AC1F773042000B556A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8127AB1F773042000B556A /* ProfileViewController.swift */; };
 		3BCB72F31F76E94F0073A991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB72F21F76E94F0073A991 /* AppDelegate.swift */; };
 		3BCB72F51F76E94F0073A991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB72F41F76E94F0073A991 /* LoginViewController.swift */; };
 		3BCB72F81F76E94F0073A991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB72F61F76E94F0073A991 /* Main.storyboard */; };
 		3BCB72FA1F76E94F0073A991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB72F91F76E94F0073A991 /* Assets.xcassets */; };
 		3BCB72FD1F76E94F0073A991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB72FB1F76E94F0073A991 /* LaunchScreen.storyboard */; };
 		3BD520181F77247400CDCF4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD520171F77247400CDCF4C /* MapViewController.swift */; };
+		7E25FB891F774081009A1CA0 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25FB881F774081009A1CA0 /* ShoppingListViewController.swift */; };
+		7E25FB8B1F774AFF009A1CA0 /* ShoppingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25FB8A1F774AFF009A1CA0 /* ShoppingListCell.swift */; };
+		7E25FB8D1F775877009A1CA0 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25FB8C1F775877009A1CA0 /* ListItemCell.swift */; };
 		B57273CC20A65F97A90B766E /* Pods_locationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A75A3E747089DDD7493E708 /* Pods_locationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +27,6 @@
 		3B62534B1F76FD4200912845 /* WhiteHouse.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhiteHouse.gpx; sourceTree = "<group>"; };
 		3B62534D1F77191C00912845 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B6253511F7719E300912845 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		3B8127AB1F773042000B556A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3BCB72EF1F76E94F0073A991 /* locationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = locationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCB72F21F76E94F0073A991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCB72F41F76E94F0073A991 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +36,9 @@
 		3BCB72FE1F76E94F0073A991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD520171F77247400CDCF4C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6080D58213642E401D7FB070 /* Pods-locationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-locationApp/Pods-locationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7E25FB881F774081009A1CA0 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		7E25FB8A1F774AFF009A1CA0 /* ShoppingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCell.swift; sourceTree = "<group>"; };
+		7E25FB8C1F775877009A1CA0 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
 		CF30C13C7EBA62DA9F018697 /* Pods-locationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-locationApp/Pods-locationApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,14 +70,6 @@
 			path = Signup;
 			sourceTree = "<group>";
 		};
-		3B8127AA1F773031000B556A /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				3B8127AB1F773042000B556A /* ProfileViewController.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		3BCB72E61F76E94F0073A991 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +91,7 @@
 		3BCB72F11F76E94F0073A991 /* locationApp */ = {
 			isa = PBXGroup;
 			children = (
-				3B8127AA1F773031000B556A /* Profile */,
+				7E25FB871F774054009A1CA0 /* ShoppingList */,
 				3BD520161F77246300CDCF4C /* Map */,
 				3B6253501F7719B900912845 /* Signup */,
 				3B62534F1F7719AF00912845 /* Login */,
@@ -124,6 +120,16 @@
 				0A75A3E747089DDD7493E708 /* Pods_locationApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E25FB871F774054009A1CA0 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				7E25FB881F774081009A1CA0 /* ShoppingListViewController.swift */,
+				7E25FB8A1F774AFF009A1CA0 /* ShoppingListCell.swift */,
+				7E25FB8C1F775877009A1CA0 /* ListItemCell.swift */,
+			);
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
 		B7A67B8EE3D77F0D34062F9E /* Pods */ = {
@@ -291,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E25FB891F774081009A1CA0 /* ShoppingListViewController.swift in Sources */,
+				7E25FB8D1F775877009A1CA0 /* ListItemCell.swift in Sources */,
 				3B6253521F7719E300912845 /* SignupViewController.swift in Sources */,
 				3BCB72F51F76E94F0073A991 /* LoginViewController.swift in Sources */,
-				3B8127AC1F773042000B556A /* ProfileViewController.swift in Sources */,
+				7E25FB8B1F774AFF009A1CA0 /* ShoppingListCell.swift in Sources */,
 				3BCB72F31F76E94F0073A991 /* AppDelegate.swift in Sources */,
 				3BD520181F77247400CDCF4C /* MapViewController.swift in Sources */,
 			);
@@ -434,7 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 882N2G5SJZ;
+				DEVELOPMENT_TEAM = W76H98A34A;
 				INFOPLIST_FILE = locationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = desmond.ang.a0093896H.locationApp;
@@ -450,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 882N2G5SJZ;
+				DEVELOPMENT_TEAM = W76H98A34A;
 				INFOPLIST_FILE = locationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = desmond.ang.a0093896H.locationApp;
