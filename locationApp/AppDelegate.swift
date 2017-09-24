@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // https://docs.hypertrack.com/gettingstarted/authentication.html
         // @NOTE: Add **"pk_d8d5e2d2278ba5797dcd7026dd050bb1a57ae4ab"** here for SDK to be
         // authenticated with HyperTrack Server
-        HyperTrack.initialize("pk_test_72c5532ddf11930d23382a5cf41e05582282403e")
+        HyperTrack.initialize("pk_test_bd29833964df472862081cd942affd64c14661f5")
 
 
         // Request For Location Always Usage authorization before proceeding

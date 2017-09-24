@@ -8,24 +8,18 @@
 
 import UIKit
 import HyperTrack
+import WebKit
 
 class MapViewController: UIViewController, HTViewInteractionDelegate, HTEventsDelegate {
-
-    // Instantiate HyperTrack map view and embed this in your view
-    let hyperTrackMap = HyperTrack.map()
+    var webView : WKWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-
-        // Configure view interaction delegate in HyperTrack map
-        hyperTrackMap.setHTViewInteractionDelegate(interactionDelegate: self)
-        // Configure view customization delegate in HyperTrack map
-        hyperTrackMap.setHTViewCustomizationDelegate(customizationDelegate: self)
-        // Configure events delegate in HyperTrack map
-        HyperTrack.setEventsDelegate(eventDelegate: self)
-        hyperTrackMap.embedIn(self.view)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIApplication.shared.open(URL(string:"https://dashboard.hypertrack.com/map/users?ordering=-last_heartbeat_at")!, options: ["UserAgent" : "Chrome Safari"], completionHandler: nil)
     }
 }
 
