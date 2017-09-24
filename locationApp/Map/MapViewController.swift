@@ -9,31 +9,33 @@
 import UIKit
 import HyperTrack
 
-class MapViewController: UIViewController, HTViewInteractionDelegate,
-    HTViewCustomizationDelegate, HTEventsDelegate {
+class MapViewController: UIViewController, HTViewInteractionDelegate, HTEventsDelegate {
+
+    // Instantiate HyperTrack map view and embed this in your view
+    let hyperTrackMap = HyperTrack.map()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        // Instantiate HyperTrack map view and embed this in your view
-        let hyperTrackMap = HyperTrack.map()
 
         // Configure view interaction delegate in HyperTrack map
         hyperTrackMap.setHTViewInteractionDelegate(interactionDelegate: self)
-
         // Configure view customization delegate in HyperTrack map
         hyperTrackMap.setHTViewCustomizationDelegate(customizationDelegate: self)
-
         // Configure events delegate in HyperTrack map
         HyperTrack.setEventsDelegate(eventDelegate: self)
-
         hyperTrackMap.embedIn(self.view)
     }
+}
 
-    // Handle back button tap
-    func didTapBackButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+//HTViewCustomizationDelegate
+extension MapViewController: HTViewCustomizationDelegate {
+    @objc func showBackButton(map: HTMap) -> Bool {
+        return false
     }
 
+    @objc func showReFocusButton(map: HTMap) -> Bool {
+        return false
+    }
 }

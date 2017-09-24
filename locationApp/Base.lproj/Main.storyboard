@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="locationApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="locationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,14 +77,14 @@
                     <connections>
                         <outlet property="emailTextField" destination="GOh-hI-vVc" id="hjL-Jl-kJc"/>
                         <outlet property="passwordTextField" destination="zvO-1F-E4W" id="x3E-bP-8rV"/>
-                        <segue destination="Kun-ax-BgR" kind="show" identifier="segueToMapViewController" id="Rj6-56-0zp"/>
+                        <segue destination="oHl-wd-0yr" kind="show" identifier="segueToTabViewController" id="b2i-0R-3uJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-292" y="127"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Track Order-->
         <scene sceneID="pZ6-sd-npS">
             <objects>
                 <viewController id="Kun-ax-BgR" customClass="MapViewController" customModule="locationApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,10 +94,110 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="3Sz-Zn-c3Y"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Track Order" id="23a-FA-D8w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IA-oz-uDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-292" y="842"/>
+            <point key="canvasLocation" x="1593" y="486"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="kN1-Qj-axY">
+            <objects>
+                <viewController id="LKp-av-Sk4" customClass="ProfileViewController" customModule="locationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPX-xR-j8q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7Y-jq-ffg">
+                                <rect key="frame" x="59" y="278" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEj-0v-2xI">
+                                <rect key="frame" x="59" y="362" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wA-br-rRP">
+                                <rect key="frame" x="59" y="249" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEV-iH-L8b">
+                                <rect key="frame" x="59" y="333" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zs-Xh-TO1">
+                                <rect key="frame" x="115" y="67" width="144" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ki6-Ch-mOt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="luG-6e-R9C"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="N7Y-jq-ffg" id="rHl-o8-f6G"/>
+                        <outlet property="phoneTextField" destination="QEj-0v-2xI" id="NP6-eq-ltc"/>
+                        <outlet property="profileImage" destination="0zs-Xh-TO1" id="i4a-c1-H8S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADb-kU-MOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583.2" y="-886.50674662668678"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="AHH-TZ-jyD">
+            <objects>
+                <viewController id="wen-wr-UHm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ICX-g7-TLF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrn-Zo-3k1">
+                                <rect key="frame" x="166" y="84" width="8" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fge-S6-v3V"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping List" id="Nzm-uf-n7A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZE-Q4-nVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="-206"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uHN-z0-SBn">
+            <objects>
+                <tabBarController id="oHl-wd-0yr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="13Z-9k-HoB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wen-wr-UHm" kind="relationship" relationship="viewControllers" id="ptt-2s-ZVh"/>
+                        <segue destination="Kun-ax-BgR" kind="relationship" relationship="viewControllers" id="XNr-5T-hz4"/>
+                        <segue destination="LKp-av-Sk4" kind="relationship" relationship="viewControllers" id="Uuh-p5-n1u"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="05J-A1-iJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="126"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="6wo-i9-DDd">
@@ -177,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E76-Fj-ev5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="127.28635682158921"/>
+            <point key="canvasLocation" x="-1292" y="126"/>
         </scene>
     </scenes>
 </document>

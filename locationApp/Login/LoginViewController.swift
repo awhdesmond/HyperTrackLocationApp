@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import HyperTrack
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     var handle: AuthStateDidChangeListenerHandle?
     var firebaseDB: DatabaseReference!
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 
                 self.loginToHyperTrack(userName: email, phoneNumber: phoneNumber, lookupID: phoneNumber)
 
-                self.performSegue(withIdentifier: "segueToMapViewController", sender: self)
+                self.performSegue(withIdentifier: "segueToTabViewController", sender: self)
             }) { (error) in
                 print(error.localizedDescription)
             }
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 }
 
 // HyperTracker Delegate
-extension ViewController {
+extension LoginViewController {
 
     func loginToHyperTrack(userName: String, phoneNumber: String, lookupID: String) {
         /**
@@ -108,7 +108,7 @@ extension ViewController {
     }
 }
 
-extension ViewController {
+extension LoginViewController {
     func showAlert(_ title: String = "Alert", message: String) {
         // create the alert
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
