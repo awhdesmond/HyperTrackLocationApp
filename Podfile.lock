@@ -12,6 +12,9 @@ PODS:
   - Firebase/Database (4.2.0):
     - Firebase/Core
     - FirebaseDatabase (= 4.0.3)
+  - Firebase/Storage (4.2.0):
+    - Firebase/Core
+    - FirebaseStorage (= 2.0.2)
   - FirebaseAnalytics (4.0.3):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -29,6 +32,13 @@ PODS:
     - FirebaseCore (~> 4.0)
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (2.0.3)
+  - FirebaseStorage (2.0.2):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseUI/Storage (4.3.0):
+    - Firebase/Storage (~> 4.0)
+    - SDWebImage (~> 4.0)
   - GoogleToolboxForMac/DebugUtils (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/Defines (2.1.1)
@@ -55,6 +65,9 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
   - SQLite.swift/standard (0.11.2)
@@ -64,6 +77,8 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Storage
+  - FirebaseUI/Storage
   - HyperTrack
 
 SPEC CHECKSUMS:
@@ -75,6 +90,8 @@ SPEC CHECKSUMS:
   FirebaseCore: 9a6cc1e3eaf75905390f9220596ad4fd8f92faee
   FirebaseDatabase: 03940adcac54ce30db06f1fc2136f8581734ce2c
   FirebaseInstanceID: a4fc702b5a026f7322964376047f1a3f1f7cc6ff
+  FirebaseStorage: 0cca42d9b889a0227c3a50121f45a4469fc9eb27
+  FirebaseUI: bf4905a1b80377d86d7c848525d623f05af34cca
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   GzipSwift: 11ddb2bf253b1cd7b60bb169da20f62ac4348769
@@ -82,9 +99,10 @@ SPEC CHECKSUMS:
   JustLog: 88ddc70d5c1e8dcc4de3b94899905975c180e9b2
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
   SwiftyBeaver: f04f739cca6826c5fb0f575fed8fa3293f76b83e
 
-PODFILE CHECKSUM: 97edba4743111a3342fc104490540509294d1032
+PODFILE CHECKSUM: 390f4d31f65c7937449f6a802c585708759dc44d
 
 COCOAPODS: 1.3.1

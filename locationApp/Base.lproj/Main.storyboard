@@ -95,7 +95,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="3Sz-Zn-c3Y"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Track Order" id="23a-FA-D8w"/>
+                    <tabBarItem key="tabBarItem" title="Track Order" image="clock" id="23a-FA-D8w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IA-oz-uDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,43 +109,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zs-Xh-TO1">
+                                <rect key="frame" x="115" y="67" width="144" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKp-pS-Zgh">
+                                <rect key="frame" x="139" y="215" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update Image"/>
+                                <connections>
+                                    <action selector="updateProfileImagePressed:" destination="LKp-av-Sk4" eventType="touchUpInside" id="kdH-cI-EBd"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7Y-jq-ffg">
-                                <rect key="frame" x="59" y="278" width="258" height="30"/>
+                                <rect key="frame" x="58" y="306" width="258" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEj-0v-2xI">
-                                <rect key="frame" x="59" y="362" width="258" height="30"/>
+                                <rect key="frame" x="58" y="390" width="258" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wA-br-rRP">
-                                <rect key="frame" x="59" y="249" width="46" height="21"/>
+                                <rect key="frame" x="58" y="277" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEV-iH-L8b">
-                                <rect key="frame" x="59" y="333" width="115" height="21"/>
+                                <rect key="frame" x="58" y="361" width="115" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zs-Xh-TO1">
-                                <rect key="frame" x="115" y="67" width="144" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ki6-Ch-mOt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="luG-6e-R9C"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="man" id="luG-6e-R9C"/>
                     <connections>
                         <outlet property="emailTextField" destination="N7Y-jq-ffg" id="rHl-o8-f6G"/>
                         <outlet property="phoneTextField" destination="QEj-0v-2xI" id="NP6-eq-ltc"/>
@@ -197,7 +205,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="fge-S6-v3V"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shopping List" id="Nzm-uf-n7A"/>
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="shopping-bag" id="Nzm-uf-n7A"/>
                     <connections>
                         <outlet property="shoppingListGrid" destination="uQb-sS-NRp" id="226-69-xNM"/>
                     </connections>
@@ -306,4 +314,9 @@
             <point key="canvasLocation" x="-1292" y="126"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clock" width="29" height="30"/>
+        <image name="man" width="30" height="30"/>
+        <image name="shopping-bag" width="30" height="30"/>
+    </resources>
 </document>
