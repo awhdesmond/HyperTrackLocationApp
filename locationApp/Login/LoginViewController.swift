@@ -59,9 +59,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         firebaseDB = Database.database().reference()
 
-        //Looks for single or multiple taps.
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        hideKeyboardWhenTappedAround()
+        emailTextField.text = "lhlhyong@gmail.com"
+        passwordTextField.text = "password"
+        
     }
 
     func viewWillAppear() {
@@ -72,12 +73,6 @@ class LoginViewController: UIViewController {
     func viewWillDisappear() {
         print("View will disappear")
         Auth.auth().removeStateDidChangeListener(handle!)
-    }
-
-    //Calls this function when the tap is recognized.
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
     }
 }
 

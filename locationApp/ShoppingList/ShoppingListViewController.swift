@@ -11,10 +11,15 @@ import UIKit
 class ShoppingListViewController: UIViewController {
 
     @IBOutlet var shoppingListGrid: UICollectionView!
-
+    
+    @IBAction func confirmOrderBtnPressed() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupShoppingListCollectionView()
+        hideKeyboardWhenTappedAround()
     }
     
     private func setupShoppingListCollectionView() {
@@ -47,7 +52,7 @@ extension ShoppingListViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 200, height: 500)
+        return CGSize(width: 200, height: 250)
     }
 }
 

@@ -11,6 +11,7 @@ import UIKit
 class ShoppingListCell: UICollectionViewCell {
     @IBOutlet var tableView: UITableView!
     var list = ["", ""]
+    var canDelete = true
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -89,7 +90,7 @@ extension ShoppingListCell: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.delete {
+        if editingStyle == UITableViewCellEditingStyle.delete && canDelete {
             list.remove(at: indexPath.row)
             tableView.reloadData()
         }
@@ -101,10 +102,26 @@ extension ShoppingListCell: UITableViewDelegate {
 }
 
 extension ShoppingListCell: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        canDelete = false
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        let cell: UITableViewCell = textField.superview!.superview as! UITableViewCell
-        let table: UITableView = cell.superview as! UITableView
-        let textFieldIndexPath = table.indexPath(for: cell)!
-        list[textFieldIndexPath.row] = textField.text!
+        let position = textField.convert(CGPoint.zero, to: tableView)
+        let indexPath = tableView.indexPathForRow(at: position)!
+        list[indexPath.row] = textField.text!
+        canDelete = true
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
