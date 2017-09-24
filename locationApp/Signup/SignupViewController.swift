@@ -33,14 +33,10 @@ class SignupViewController: UIViewController {
             return
         }
 
-        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            if let error = error {
-                self.showAlert(message: error.localizedDescription)
-                return
-            }
-            let sanitizedEmail = email.replacingOccurrences(of: ".", with: "")
-            self.firebaseDB.child("users").child(sanitizedEmail).setValue(["email": email, "phone": phone])
+        AuthController.signUpUser(email: email, password: password, phone: phone, successHandler: { () in
             self.showAlert(message: "Sign up success")
+        }) { (error) in
+            print(error.localizedDescription)
         }
     }
 
