@@ -11,6 +11,7 @@
 		3B62534E1F77191C00912845 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B62534D1F77191C00912845 /* GoogleService-Info.plist */; };
 		3B6253521F7719E300912845 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6253511F7719E300912845 /* SignupViewController.swift */; };
 		3B8127AC1F773042000B556A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8127AB1F773042000B556A /* ProfileViewController.swift */; };
+		3B8127AF1F77479F000B556A /* GroceriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8127AE1F77479F000B556A /* GroceriesViewController.swift */; };
 		3BCB72F31F76E94F0073A991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB72F21F76E94F0073A991 /* AppDelegate.swift */; };
 		3BCB72F51F76E94F0073A991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB72F41F76E94F0073A991 /* LoginViewController.swift */; };
 		3BCB72F81F76E94F0073A991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB72F61F76E94F0073A991 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		3B62534D1F77191C00912845 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B6253511F7719E300912845 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3B8127AB1F773042000B556A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3B8127AE1F77479F000B556A /* GroceriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewController.swift; sourceTree = "<group>"; };
 		3BCB72EF1F76E94F0073A991 /* locationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = locationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCB72F21F76E94F0073A991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCB72F41F76E94F0073A991 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		3B8127AD1F774788000B556A /* Groceries */ = {
+			isa = PBXGroup;
+			children = (
+				3B8127AE1F77479F000B556A /* GroceriesViewController.swift */,
+			);
+			path = Groceries;
+			sourceTree = "<group>";
+		};
 		3BCB72E61F76E94F0073A991 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		3BCB72F11F76E94F0073A991 /* locationApp */ = {
 			isa = PBXGroup;
 			children = (
+				3B8127AD1F774788000B556A /* Groceries */,
 				3B8127AA1F773031000B556A /* Profile */,
 				3BD520161F77246300CDCF4C /* Map */,
 				3B6253501F7719B900912845 /* Signup */,
@@ -291,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8127AF1F77479F000B556A /* GroceriesViewController.swift in Sources */,
 				3B6253521F7719E300912845 /* SignupViewController.swift in Sources */,
 				3BCB72F51F76E94F0073A991 /* LoginViewController.swift in Sources */,
 				3B8127AC1F773042000B556A /* ProfileViewController.swift in Sources */,
@@ -436,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 882N2G5SJZ;
 				INFOPLIST_FILE = locationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = desmond.ang.a0093896H.locationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 882N2G5SJZ;
 				INFOPLIST_FILE = locationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = desmond.ang.a0093896H.locationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -20,10 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo use</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) location use</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>To get accurate location</string>
+	<string>$(PRODUCT_NAME) location use</string>
+	<key>NSLocationUsageDescription</key>
+	<string>$(PRODUCT_NAME) location use</string>
 	<key>NSMotionUsageDescription</key>
-	<string>To get activity data</string>
+	<string>$(PRODUCT_NAME) motion use</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo use</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
